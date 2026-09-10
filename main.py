@@ -714,11 +714,11 @@ class Tree(GitObject):
 #     # status command
 #     status_parser = subparsers.add_parser("status", help="Show repository status")
 
-#     args = parser.parse_args()
+    args = parser.parse_args()
 
-#     if not args.command:
-#         parser.print_help()
-#         return
+    if not args.command:
+        parser.print_help()
+        return
 
     repo = Repository()
     try:
