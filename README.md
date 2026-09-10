@@ -28,3 +28,18 @@ PyGit is a **Python implementation of Git** that demonstrates the core concepts 
 - Represent directory structures
 - Store references to blobs and other trees
 - Maintain file permissions and names
+
+
+### 4. **Commit Objects**
+
+- Store metadata about commits (author, timestamp, message)
+- Reference tree objects and parent commits
+- Form the commit history chain
+
+### 5. **Repository Class**
+
+- Manages the `.git` directory structure
+- Handles object storage and retrieval
+- Implements Git commands (init, add, commit, checkout, etc.)
+
+---
