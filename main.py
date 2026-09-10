@@ -731,12 +731,12 @@ class Tree(GitObject):
 #                 print("Not a git repository")
 #                 return
 
-#             for path in args.paths:
-#                 repo.add_path(path)
-#         elif args.command == "commit":
-#             if not repo.git_dir.exists():
-#                 print("Not a git repository")
-#                 return
+            for path in args.paths:
+                repo.add_path(path)
+        elif args.command == "commit":
+            if not repo.git_dir.exists():
+                print("Not a git repository")
+                return
 
             author = args.author or "PyGit user <user@pygit.com>"
             repo.commit(args.message, author)
