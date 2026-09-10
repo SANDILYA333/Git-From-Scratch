@@ -21,7 +21,7 @@ def main():
         return
 
     try:
-        pass
+        if args.command == "init":
     except Exception as e:
         print(f"Error:{e}")
         sys.exit(1)
