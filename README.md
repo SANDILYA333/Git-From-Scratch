@@ -43,3 +43,15 @@ PyGit is a **Python implementation of Git** that demonstrates the core concepts 
 - Implements Git commands (init, add, commit, checkout, etc.)
 
 ---
+
+## Features
+
+- **Repository Initialization** - Create new Git repositories
+- **File Staging** - Add files to the staging area
+- **Commit Creation** - Create commits with messages and metadata
+- **Branch Management** - Create, switch, and delete branches
+- **Commit History** - View commit logs and history
+- **Status Checking** - Monitor repository state
+- **Object Storage** - Efficient storage using SHA-1 hashing and compression
+
+---
