@@ -668,28 +668,28 @@ class Tree(GitObject):
 #     )
 #     add_parser.add_argument("paths", nargs="+", help="Files and directories to add")
 
-#     # commit command
-#     commit_parser = subparsers.add_parser("commit", help="Create a new commit")
-#     commit_parser.add_argument(
-#         "-m",
-#         "--message",
-#         help="Commit message",
-#         required=True,
-#     )
-#     commit_parser.add_argument(
-#         "--author",
-#         help="Author name and email",
-#     )
+    # commit command
+    commit_parser = subparsers.add_parser("commit", help="Create a new commit")
+    commit_parser.add_argument(
+        "-m",
+        "--message",
+        help="Commit message",
+        required=True,
+    )
+    commit_parser.add_argument(
+        "--author",
+        help="Author name and email",
+    )
 
-#     # checkout command
-#     checkout_parser = subparsers.add_parser("checkout", help="Move/Create a new branch")
-#     checkout_parser.add_argument("branch", help="Branch to switch to")
-#     checkout_parser.add_argument(
-#         "-b",
-#         "--create-branch",
-#         action="store_true",
-#         help="Create and switch to a new branch",
-#     )
+    # checkout command
+    checkout_parser = subparsers.add_parser("checkout", help="Move/Create a new branch")
+    checkout_parser.add_argument("branch", help="Branch to switch to")
+    checkout_parser.add_argument(
+        "-b",
+        "--create-branch",
+        action="store_true",
+        help="Create and switch to a new branch",
+    )
 
     # branch command
     branch_parser = subparsers.add_parser("branch", help="List or manage branches")
