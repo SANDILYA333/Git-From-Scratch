@@ -1,3 +1,4 @@
+import sys
 import argparse
 def main():
     parser = argparse.ArgumentParser(
@@ -19,6 +20,11 @@ def main():
         print("\nError: Please provide a valid command")
         return
 
+    try:
+        pass
+    except Exception as e:
+        print(f"Error:{e}")
+        sys.exit(1)
     
 
 main()
