@@ -14,4 +14,11 @@ def main():
     args=parser.parse_args()
     print(args)
 
+    if not args.command:
+        parser.print_help()
+        print("\nError: Please provide a valid command")
+        return
+
+    
+
 main()
