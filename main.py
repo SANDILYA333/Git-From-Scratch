@@ -1,9 +1,11 @@
 import sys
 import argparse
 
+
 class Repository:
-    def __init__(self,path="."):
-        self.path = Path(path).resolve() #git init
+    def __init__(self, path="."):
+        self.path = Path(path).resolve()
+        self.git_dir = self.path / ".git"
 
 def main():
     parser = argparse.ArgumentParser(
