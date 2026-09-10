@@ -40,6 +40,19 @@ class Repository:
 
         return True
     
+if deleted_files:
+            print("\nDeleted files:")
+            for file_path in sorted(deleted_files):
+                print(f"   deleted: {file_path}")
+
+        if (
+            not staged_files
+            and not unstaged_files
+            and not deleted_files
+            and not untracked_files
+        ):
+            print("\nnothing to commit, working tree clean")
+
 
 
 def main():
