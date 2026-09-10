@@ -1,5 +1,10 @@
 import sys
 import argparse
+
+class Repository:
+    def __init__(self,path="."):
+        self.path = Path(path).resolve() #git init
+
 def main():
     parser = argparse.ArgumentParser(
         description="Git from Scratch",
