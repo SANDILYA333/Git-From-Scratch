@@ -750,11 +750,11 @@ class Tree(GitObject):
 #                 print("Not a git repository")
 #                 return
 
-#             repo.branch(args.name, args.delete)
-#         elif args.command == "log":
-#             if not repo.git_dir.exists():
-#                 print("Not a git repository")
-#                 return
+            repo.branch(args.name, args.delete)
+        elif args.command == "log":
+            if not repo.git_dir.exists():
+                print("Not a git repository")
+                return
 
             repo.log(args.max_count)
         elif args.command == "status":
