@@ -738,17 +738,17 @@ class Tree(GitObject):
 #                 print("Not a git repository")
 #                 return
 
-#             author = args.author or "PyGit user <user@pygit.com>"
-#             repo.commit(args.message, author)
-#         elif args.command == "checkout":
-#             if not repo.git_dir.exists():
-#                 print("Not a git repository")
-#                 return
-#             repo.checkout(args.branch, args.create_branch)
-#         elif args.command == "branch":
-#             if not repo.git_dir.exists():
-#                 print("Not a git repository")
-#                 return
+            author = args.author or "PyGit user <user@pygit.com>"
+            repo.commit(args.message, author)
+        elif args.command == "checkout":
+            if not repo.git_dir.exists():
+                print("Not a git repository")
+                return
+            repo.checkout(args.branch, args.create_branch)
+        elif args.command == "branch":
+            if not repo.git_dir.exists():
+                print("Not a git repository")
+                return
 
             repo.branch(args.name, args.delete)
         elif args.command == "log":
