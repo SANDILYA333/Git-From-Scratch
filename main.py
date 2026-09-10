@@ -691,28 +691,28 @@ class Tree(GitObject):
 #         help="Create and switch to a new branch",
 #     )
 
-#     # branch command
-#     branch_parser = subparsers.add_parser("branch", help="List or manage branches")
-#     branch_parser.add_argument("name", nargs="?")
-#     branch_parser.add_argument(
-#         "-d",
-#         "--delete",
-#         action="store_true",
-#         help="Delete the branch",
-#     )
+    # branch command
+    branch_parser = subparsers.add_parser("branch", help="List or manage branches")
+    branch_parser.add_argument("name", nargs="?")
+    branch_parser.add_argument(
+        "-d",
+        "--delete",
+        action="store_true",
+        help="Delete the branch",
+    )
 
-#     # log command
-#     log_parser = subparsers.add_parser("log", help="Show commit history")
-#     log_parser.add_argument(
-#         "-n",
-#         "--max-count",
-#         type=int,
-#         default=10,
-#         help="Limit commits shown",
-#     )
+    # log command
+    log_parser = subparsers.add_parser("log", help="Show commit history")
+    log_parser.add_argument(
+        "-n",
+        "--max-count",
+        type=int,
+        default=10,
+        help="Limit commits shown",
+    )
 
-#     # status command
-#     status_parser = subparsers.add_parser("status", help="Show repository status")
+    # status command
+    status_parser = subparsers.add_parser("status", help="Show repository status")
 
     args = parser.parse_args()
 
