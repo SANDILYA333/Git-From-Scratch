@@ -762,11 +762,11 @@ class Tree(GitObject):
 #                 print("Not a git repository")
 #                 return
 
-#             repo.status()
+            repo.status()
 
-#     except Exception as e:
-#         print(f"Error: {e}")
-#         sys.exit(1)
+    except Exception as e:
+        print(f"Error: {e}")
+        sys.exit(1)
 
 
-# main()
+main()
