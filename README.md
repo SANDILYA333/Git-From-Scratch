@@ -16,3 +16,15 @@ PyGit is a **Python implementation of Git** that demonstrates the core concepts 
 - Base class for all Git objects (Blob, Tree, Commit)
 - Handles serialization/deserialization with zlib compression
 - Generates SHA-1 hashes for object identification (real Git uses SHA-256 nowadays)
+
+
+### 2. **Blob Objects**
+
+- Store actual file contents
+- Represent individual files in the repository
+
+### 3. **Tree Objects**
+
+- Represent directory structures
+- Store references to blobs and other trees
+- Maintain file permissions and names
