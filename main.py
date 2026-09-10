@@ -343,7 +343,7 @@ class Repository:
     def commit(
         self,
         message: str,
-        author: str = "PyGit User <user@pygit.com>",
+        author: str = "GFS User <user@gfs.com>",
     ):
         # create a tree object from the index (staging area)
         tree_hash = self.create_tree_from_index()
@@ -656,7 +656,7 @@ class Repository:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="PyGit - A simple git clone!")
+    parser = argparse.ArgumentParser(description="GFS (Git From Scratch) - A simple git clone!")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
     # init command
@@ -738,7 +738,7 @@ def main():
                 print("Not a git repository")
                 return
 
-            author = args.author or "PyGit user <user@pygit.com>"
+            author = args.author or "GFS User <user@gfs.com>"
             repo.commit(args.message, author)
         elif args.command == "checkout":
             if not repo.git_dir.exists():

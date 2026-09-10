@@ -1,13 +1,8 @@
-# PyGit - A Simple Git Clone in Python
+# GFS (Git From Scratch)
 
-> **Watch the full tutorial on YouTube!**  
-> https://youtu.be/g2cfjDENSyw
+## 📖 What is GFS?
 
----
-
-## 📖 What is PyGit?
-
-PyGit is a **Python implementation of Git** that demonstrates the core concepts and internals of version control systems. This project is for educational purposes to understand how Git works under the hood by implementing the fundamental data structures and operations.
+GFS (Git From Scratch) is a **Python implementation of Git** that demonstrates the core concepts and internals of version control systems. This project is for educational purposes to understand how Git works under the hood by implementing the fundamental data structures and operations.
 
 ## Core Components
 
@@ -66,9 +61,9 @@ PyGit is a **Python implementation of Git** that demonstrates the core concepts 
 ```bash
 # Clone the repository
 git clone <this-repo-url>
-cd git_clone
+cd Git-From-Scratch
 
-# Run PyGit commands
+# Run GFS commands
 python3 main.py init
 python3 main.py add README.md
 python3 main.py commit -m "Initial commit"
@@ -136,8 +131,8 @@ python3 main.py log -n 5
 ## 🗂️ Project Structure
 
 ```
-git_clone/
-├── main.py          # Main PyGit implementation
+Git-From-Scratch/
+├── main.py          # Main GFS implementation
 ├── README.md        # This file
 └── .git/           # Git repository (created after init)
     ├── objects/    # Git objects database
