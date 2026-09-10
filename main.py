@@ -720,16 +720,16 @@ class Tree(GitObject):
 #         parser.print_help()
 #         return
 
-#     repo = Repository()
-#     try:
-#         if args.command == "init":
-#             if not repo.init():
-#                 print("Repository already exists")
-#                 return
-#         elif args.command == "add":
-#             if not repo.git_dir.exists():
-#                 print("Not a git repository")
-#                 return
+    repo = Repository()
+    try:
+        if args.command == "init":
+            if not repo.init():
+                print("Repository already exists")
+                return
+        elif args.command == "add":
+            if not repo.git_dir.exists():
+                print("Not a git repository")
+                return
 
             for path in args.paths:
                 repo.add_path(path)
